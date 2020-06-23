@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="font/VNF_Futura.ttf">
+    <link rel="stylesheet" href="css/menu-demo.css">
+</head>
+
+<body>
+    <header>
+        <div class="menu-content">
+            <div class="container">
+                <nav class="menu">
+                    <ul>
+                        <li class="menu__item">
+                            <a href="" class="menu__link ">Giới thiệu </a>
+                        </li>
+                        <li class="menu__item to-left">
+                            <a href="" class="menu__link">Dịch vụ</a>
+                            <ul class="menu__sub-menu">
+                                <li class="menu__sub-menu__item">
+                                    <a href="" class="menu-sub-link">Quản lí quỹ</a>
+                                </li>
+                                <li class="menu__sub-menu__item to-left">
+                                    <a href="" class="menu-sub-link">Ngân hàng đầu tư</a>
+                                    <ul class="menu__sub-menu">
+                                        <li class="menu__sub-menu__item">
+                                            <a href="" class="menu__sub-menu__link"> Giới thiệu </a>
+                                        </li>
+                                        <li class="menu__sub-menu__item">
+                                            <a href="" class="menu__sub-menu__link">Các thành viên</a>
+                                        </li>
+                                        <li class="menu__sub-menu__item">
+                                            <a href="" class="menu__sub-menu__link">Các THương vụ tiêu biểu</a>
+                                        </li>
+                                        <li class="menu__sub-menu__item">
+                                            <a href="" class="menu__sub-menu__link">Đối tác và khách hàng</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__sub-menu__item">
+                                    <a href="" class="menu__sub-menu__link">Môi GIới</a>
+                                </li>
+                                <li class="menu__sub-menu__item">
+                                    <a href="" class="menu__sub-menu__link">Phân tích</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Quan hệ cổ đông</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Tin tức</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Tuyển dụng</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Liên hệ</a>
+                        </li>
+                        <li class="menu__item li-nn">
+                            <a href="" class="menu__link"> <span><i class="fas fa-globe-asia"></i></span> Tiếng việt</a>
+                            <ul class="menu__sub-menu">
+                                <li class="menu__sub-menu__item">
+                                    <a href="" class="menu-sub-link">English</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item search">
+                            <form id="form-search">
+                                <input type="search" placeholder="Search">
+                            </form>
+
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="button-mobile">
+            <div id="nav-icon" class="menu-button visible-xs">
+                <span class="burger-icon"></span>
+            </div>
+            <div class="search">
+                <form id="form-search">
+                    <input type="search" placeholder="Search">
+                </form>
+            </div>
+
+        </div>
+    </header>
+    <script type='text/javascript' src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="js/menu-demo.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $('.menu').responsiveMenu({
+                breakpoint: '992'
+            });
+        });
+    </script>
+</body>
+
+</html>
