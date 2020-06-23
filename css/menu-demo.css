@@ -111,7 +111,6 @@ header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     line-height: 50px;
     list-style: none;
-    transition: 1s;
 }
 
 .menu__item>a {
@@ -161,7 +160,6 @@ header {
     font-family: "Slabo+27px", sans-serif;
     font-size: 14px;
     text-decoration: none;
-    transition: all 0.3s;
     display: block;
     position: relative;
     transform: translate(0, 0) !important;
@@ -194,7 +192,7 @@ header {
     }
     .menu-content {
         top: 53px;
-        position: absolute !important;
+        position: fixed!important;
     }
     .menu ul li :hover>a {
         font-weight: bold;
@@ -203,6 +201,9 @@ header {
         font-weight: bold;
     }
     .menu ul .menu-search {
+        display: none;
+    }
+    .topbar {
         display: none;
     }
 }
@@ -290,7 +291,6 @@ header {
     .menu__sub-menu .menu__sub-menu {
         top: 0;
         left: 189px;
-        transition: all 0.3s;
         transform: translate(-60px, 0);
         position: absolute;
     }
@@ -320,7 +320,7 @@ header {
     padding: 10px;
     border: none;
     cursor: pointer;
-    transition: 0s;
+    transition: 0.5s;
     border-radius: 2px;
     width: auto;
     position: relative;
@@ -589,4 +589,10 @@ input::-webkit-input-placeholder {
 
 #form-search input::-webkit-input-placeholder {
     color: transparent;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
